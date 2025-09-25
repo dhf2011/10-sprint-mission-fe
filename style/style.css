@@ -1,0 +1,228 @@
+:root {
+    --primary-blue: #3692FF;
+    --light-blue-bg: #EAF0FF;
+    --text-color: #333;
+    --white-color: #fff;
+    --footer-bg: #111827;
+    --dark-grey: #666;
+    --light-grey: #ccc;
+    --max-width: 1920px;
+    --content-width: 1400px;
+}
+
+/* Base styles */
+body {
+    min-width: 1100px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.panda_cursor_pointer {
+    cursor: pointer;
+}
+
+/* Global Navigation Bar */
+.panda_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.panda_header_content_logo{
+    display: flex;
+    gap: 10px;
+     justify-content: center;
+    align-items: center;
+}
+
+
+.panda_header_content {
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    min-width: 1100px;
+    max-width: 1420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.panda_logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-blue);
+    cursor: pointer;
+}
+
+.panda_login_btn {
+    padding: 10px 24px;
+   background-color:var(--primary-blue);
+    color: var(--white-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.panda_login_btn:hover{background-color: var(--light-blue-bg); border: 1px solid var(--primary-blue); color: var(--primary-blue);}
+
+/* Hero Section */
+.panda_hero_section {
+    margin-top: 70px;
+    background-color: var(--light-blue-bg);
+    width: 100%;
+    height: 540px;
+
+}
+
+.panda_hero_content {
+    
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    width: 1100px;
+    height: 540px;
+    box-sizing: border-box;
+}
+
+.panda_hero_text{margin-bottom: 80px;}
+
+.panda_hero_text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.panda_explore_btn {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--white-color);
+    padding: 16px 120px;
+    border-radius: 40px;
+    font-weight: 600;   
+    margin-top: 20px;
+    cursor: pointer;
+    height: 56px;
+    font-size: 20px;
+}
+
+.panda_hero_image img{display: flex;
+    position: relative;
+    top: 20px;
+width: 746px;
+height: 340px;
+padding-right: 0;
+justify-content: center;
+align-items: center;
+display: flex;
+    
+}
+/* Feature Sections */
+.panda_feature_section {
+    padding: 130px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.panda_feature_card {
+    width: 988px;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    max-width: var(--content-width);
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+
+.panda_feature_card.panda_reverse {
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+.panda_feature_image img {
+    max-width: 100%;
+    height: auto;
+}
+.panda_feature_text span{ color: #3692FF; font-size: 18px;line-height: 26px; font-weight: 700;}
+
+.panda_feature_text h2 {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 140%;
+}
+
+.panda_feature_text p {
+    color: var(--dark-grey);
+    line-height: 1.5;
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+/* Footer */
+.panda_footer {
+    padding: 32px 200px;
+    background-color: var(--footer-bg);
+    color: var(--light-grey);
+ 
+}
+.panda_footer_wrap{ height: 160px; width: 100%; max-width: 1920px; margin: auto;}
+.panda_footer_top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.panda_footer_intro h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.panda_footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.panda_footer_links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.panda_footer_link {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.panda_social_icons a {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.panda_copyright{color: #9CA3AF;}
+
+.mr10{margin-right: 10px;}
+
